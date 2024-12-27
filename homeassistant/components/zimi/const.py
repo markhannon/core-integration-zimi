@@ -4,5 +4,5 @@ from homeassistant.const import Platform
 
 CONTROLLER = "zimi_controller"
 DOMAIN = "zimi"
-PLATFORMS = [Platform.LIGHT, Platform.SWITCH]
+PLATFORMS = [Platform.FAN, Platform.LIGHT, Platform.SWITCH]
 TITLE = "ZIMI Controller"
