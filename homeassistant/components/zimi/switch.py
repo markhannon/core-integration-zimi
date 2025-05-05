@@ -7,7 +7,7 @@ from typing import Any
 
 from zcc import ControlPoint
 
-from homeassistant.components.switch import SwitchDeviceClass, SwitchEntity
+from homeassistant.components.switch import SwitchEntity
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 
@@ -33,9 +33,6 @@ async def async_setup_entry(
 
 class ZimiSwitch(ZimiEntity, SwitchEntity):
     """Representation of an Zimi Switch."""
-
-    _attr_device_class = SwitchDeviceClass.SWITCH
-    _attr_icon = "mdi:power-socket-au"
 
     @property
     def is_on(self) -> bool:
